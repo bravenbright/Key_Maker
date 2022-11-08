@@ -24,8 +24,6 @@ function generatePassword() {
   for(var i = 0; i < pwLength; i++) {
     let randomIndex = Math.floor(Math.random() * randomCharTypes.length); 
     let randomCharType = randomCharTypes[randomIndex];
-    console.log(randomCharType);
-    console.log(lowerChar);
     if(randomCharType == 'lower_char') {
       password += lowerChar[Math.floor(Math.random() * 25)];
     } else if(randomCharType == 'upper_char') {
